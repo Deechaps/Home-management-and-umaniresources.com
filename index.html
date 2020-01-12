@@ -17,19 +17,68 @@
   <body>
     <div class="container d-flex align-items-center h-100">
       <div class="row">
-        <header class="text-center col-12">
-          <h1><strong><center>Monthly Expenses Calculation and umaniresources.com </center></strong></h1>
-        </header>
-        
+   
         <div class="buffer col-12"></div>
         <section class="text-center col-12">
+
+
+          <hr>
+          <button type="button"
+            onclick="document.getElementById('demo').innerHTML = Date()" class="btn btn-primary btn-xl">What is the time?</button> <p id="demo"></p>
+      
+          <hr>
+          <button onclick="myGreetingFunction()" class="btn btn-primary btn-xl">Greeting</button>
+            <script>
+            function myGreetingFunction() {
+              var name = prompt("Hi, Nice to see you here. What's your name?");
+                if (name === "Mani") {
+                    alert ("Hi, Mani Bro! Whats up!!");
+                } else if (name === "Uma") { 
+                    alert ("Hi, Uma Vauju! How are you?");
+                } else { 
+                     alert("Humm you must be Mani bro's relative!! Nice to see you here");
+                       }
+                       }
+                </script>
+
+          <hr>
+          <a href="Manibro'sGroceryList.html"><button class="btn btn-primary btn-xl">Shoping List</button>
+          </a>
+          <hr>
+          <a href="Manibro'stodolist.html"><button class="btn btn-primary btn-xl">My To Do List</button>
+          </a>
+          <hr>
+          <button onclick="myExpenseFunction()" class="btn btn-primary btn-xl">Monthly Expenses Calculation</button>
+          <script>
+            function myExpenseFunction() {
+            var manibronumber = prompt("Enter Mani bro's total expense for this month");
+            var umavaujunumber = prompt("Enter Uma Vauju's total expense for this month");
+            var baininumber = prompt("Enter Baini's total expense for this month");
+            var ashokbronumber = prompt("Enter Ashok bro's total expense for this month");
+            var otherbronumber = prompt("Enter Other bro's total expense for this month");
+            var sum = Number(manibronumber) + Number(umavaujunumber) + Number(baininumber) + Number(ashokbronumber) + Number(otherbronumber);
+            alert("Total expense for this month is: " + sum);
+            alert("Per head expencess for this month is: " + sum/5);
+            var Averageexpencess = sum/5;
+            var subtract1 = Number(manibronumber) - Number(Averageexpencess);
+            alert("Mani Bro owe/reveive to/from the group: " + subtract1);
+            var subtract2 = Number(umavaujunumber) - Number(Averageexpencess);
+            alert("Uma Vauju owe/reveive to/from the group: " + subtract2);
+            var subtract3 = Number(baininumber) - Number(Averageexpencess);
+            alert("Baini owe/reveive to/from the group: " + subtract3);
+            var subtract4 = Number(ashokbronumber) - Number(Averageexpencess);
+            alert("Ashok Bro owe/reveive to/from the group: " + subtract4);
+            var subtract5 = Number(otherbronumber) - Number(Averageexpencess);
+            alert("Other Bro owe/reveive to/from the group: " + subtract5);
+                   }
+            </script>
           <hr>
           <a href="https://umaniresources.com"><button class="btn btn-primary btn-xl">umaniresources.com</button>
           </a>
         </section>
       </div>
     </div>
-              <script type="text/javascript" src="greeting.js"> </script>
-          <script type="text/javascript" src="Mani Bro's home monthly calculater.js"> </script>
+
+
   </body>
 </html>
