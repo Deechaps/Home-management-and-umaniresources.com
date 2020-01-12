@@ -17,3 +17,4 @@ var subtract4 = Number(ashokbronumber) - Number(Averageexpencess);
 alert("Ashok Bro owe/reveive to/from the group: " + subtract4);
 var subtract5 = Number(otherbronumber) - Number(Averageexpencess);
 alert("Other Bro owe/reveive to/from the group: " + subtract5);
+alert("Thank you!!! Thanks for your patience, let's visit Umaniresources.com please click below box");
