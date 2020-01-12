@@ -5,7 +5,7 @@ var ashokbronumber = prompt("Enter Ashok bro's total expense for this month");
 var otherbronumber = prompt("Enter Other bro's total expense for this month");
 var sum = Number(manibronumber) + Number(umavaujunumber) + Number(baininumber) + Number(ashokbronumber) + Number(otherbronumber);
 alert("Total expense for this month is: " + sum);
-alert("Per head expencess for this month is: " + sum/5);
+alert("Average expencess for this month (Per person is): " + sum/5);
 var Averageexpencess = sum/5;
 var subtract1 = Number(manibronumber) - Number(Averageexpencess);
 alert("Mani Bro owe/reveive to/from the group: " + subtract1);
