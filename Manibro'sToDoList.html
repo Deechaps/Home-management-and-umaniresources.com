@@ -82,11 +82,11 @@ ul li.checked::before {
 
 /* Style the header */
 .header {
-  background-color: Green;
+  background-color: #f44336;
   padding: 30px 40px;
   color: white;
   text-align: center;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 /* Clear floats after the header */
@@ -127,19 +127,17 @@ input {
 </style>
 </head>
 <body>
-<form method="post" action="mailto:560543@gmail.com" method="post" enctype="text/plain">
+
 <div id="myDIV" class="header">
-  <h2 style="margin:5px">My Grocery List</h2>
+  <h2 style="margin:5px">My To Do List</h2>
   <input type="text" id="myInput" placeholder="Title...">
   <span onclick="newElement()" class="addBtn">Add</span>
 </div>
 
 <ul id="myUL">
-  <li>Rice</li>
-  <li>Wheat Flour</li>
-  <li>Maida </li>
-  <li>Maida </li>
-  <li>Onion</li>
+  <li>Hit the gym</li>
+  <li class="checked">Pay bills</li>
+  <li>Meet George</li>
 </ul>
 
 <script>
@@ -200,19 +198,13 @@ function newElement() {
 }
 </script>
 <br>
-
-
-  <button ><h2><a style="  background-color: Green;
+<br>
+<br>
+  <button ><h2><a href="https://deechaps.github.io/Home-management-and-umaniresources.com/" style="  background-color: #f44336;
   padding: 10px 40px;
   color: white;
   text-align: center;
-  opacity: 0.7;" type="submit">Send an email</a></h2></button>
-<br>
-<br> 
-  <button ><h2><a href="https://deechaps.github.io/Home-management-and-umaniresources.com/" style="  background-color: Green;
-  padding: 10px 67px;
-  color: white;
-  text-align: center;
-  opacity: 0.7;">  Go Back  </a></h2></button>
+  opacity: 0.9; opacity: 0.9;">Go Back</a></h2></button>
+
 </body>
 </html>
